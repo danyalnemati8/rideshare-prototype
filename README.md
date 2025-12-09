@@ -1,13 +1,7 @@
-Rideshare Prototype
-
-This is a simple rideshare simulation prototype built with FastAPI. The system consists of three microservices: the rider service, the driver service, and the matching service. Each service runs independently and communicates through simple REST endpoints.
-
-This guide explains how to run the entire prototype from start to finish.
-
 How to Run the Prototype
 Step 1 Start the Rider Service
 
-Open a new terminal window
+Open a new terminal
 
 Install the required Python packages
 
@@ -47,7 +41,7 @@ Start the service on port 8002
 uvicorn main:app --reload --port 8002
 
 
-Register a driver by opening your browser and entering
+Register a driver
 
 http://127.0.0.1:8002/driver/register?driver_id=D1&name=Alice
 
@@ -92,7 +86,7 @@ Start the service on port 8003
 uvicorn main:app --reload --port 8003
 
 
-Match a rider and driver by entering
+Match a rider with a driver
 
 http://127.0.0.1:8003/match?rider_id=R1
 
